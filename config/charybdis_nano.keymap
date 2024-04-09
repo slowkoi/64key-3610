@@ -70,7 +70,6 @@
         #binding-cells = <0>;
         bindings = <&kp DOT>, <&kp SEMI>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
-        masked_mods = <(MOD_LSFT|MOD_RSFT)>; // don't send shift
       };
     };
 
