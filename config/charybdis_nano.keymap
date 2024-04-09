@@ -227,7 +227,6 @@
                 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &cmqus          &dtsmi          &kp CAPS
                                                 &lt MOUSE ESC   &lt FUN TAB     &lt SYM SPACE   &lt SYM RET     &lt FUN BSPC
              	>;
-            trackball-bindings = <&tmv>;
         };
 
         number_layer {
@@ -248,7 +247,6 @@
                 &none           &none           &kp SLASH       &kp STAR        &kp BSLH        &kp HASH        &kp DLLR        &kp LBKT        &kp RBKT        &none  
                                                 &none           &none           &none           &none           &none
             >;
-            trackball-bindings = <&tmv_coarse>;
         };
 
         function_layer {
@@ -259,7 +257,6 @@
                 &kp F9           &kp F10        &kp F11         &kp F12         &none           &none           &none           &none           &none           &none
                                                 &none           &none           &none           &none           &none
             >;
-            trackball-bindings = <&tsl>;
         };
 
         mouse_layer {
