@@ -262,7 +262,7 @@
             bindings = <
                 &trans           &trans           &trans           &trans            &trans          &trans          &trans          &trans          &trans          &trans
                 &trans           &mkp LCLK        &mkp MCLK        &mkp RCLK         &trans          &trans          &trans          &trans          &trans          &trans
-                &trans           &trans           &trans           &trans            &trans          &trans          &trans          &trans          &trans          &mkp LCLK
+                &trans           &trans           &trans           &lt SCROLL ESC    &trans          &trans          &trans          &trans          &trans          &mkp LCLK
                                                   &trans           &trans            &trans          &trans          &trans
             >;
         };
