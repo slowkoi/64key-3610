@@ -4,6 +4,7 @@
 #define FUN     3
 #define MOUSE   4
 #define SCROLL  5
+#define SNIPE   6
 
 #include <behaviors.dtsi>
 #include <behaviors/mouse_keys.dtsi>
@@ -24,6 +25,9 @@
     quick-tap-ms = <150>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>
+}
 
 / {
     // macros
@@ -146,6 +150,24 @@
             bindings = <&tog NUM>;
         };
 
+        combo_capsword {
+            timeout-ms = <50>;
+            key-positions = <2 7>;
+            bindings = <&caps_word>;
+        }
+
+        combo_lclk {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&mkp LCLK>;
+        }
+
+        combo_rclk {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&mkp RCLK>;
+        }
+
         // output selection
         combo_outble {
             timeout-ms = <50>;
@@ -259,15 +281,27 @@
         };
 
         mouse_layer {
+            label = "MOUSE";
             bindings = <
                 &trans           &trans           &trans           &trans            &trans          &trans          &trans          &trans          &trans          &trans
-                &trans           &mkp LCLK        &mkp MCLK        &mkp RCLK         &trans          &trans          &trans          &trans          &trans          &trans
-                &trans           &trans           &trans           &lt SCROLL ESC    &trans          &trans          &trans          &trans          &trans          &mkp LCLK
+                &trans           &mkp LCLK        &mkp MCLK        &mkp RCLK         &trans          &trans          &kp RCTL        &kp RSFT        &kp RALT        &kp RGUI
+                &trans           &trans           &trans           &lt SCROLL ESC    &lt SNIPE ESC   &trans          &trans          &trans          &trans          &mkp LCLK
                                                   &trans           &trans            &trans          &trans          &trans
             >;
         };
 
         scroll_layer {
+            label = "SCROLL";
+            bindings = <
+                &trans           &trans           &trans           &trans            &trans          &trans          &trans          &trans          &trans          &trans
+                &trans           &trans           &trans           &trans            &trans          &trans          &trans          &trans          &trans          &trans
+                &trans           &trans           &trans           &trans            &trans          &trans          &trans          &trans          &trans          &trans
+                                                  &trans           &trans            &trans          &trans          &trans
+            >;
+        };
+
+        snipe_layer {
+            label = "SNIPE";
             bindings = <
                 &trans           &trans           &trans           &trans            &trans          &trans          &trans          &trans          &trans          &trans
                 &trans           &trans           &trans           &trans            &trans          &trans          &trans          &trans          &trans          &trans
