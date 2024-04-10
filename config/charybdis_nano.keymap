@@ -27,7 +27,7 @@
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>
-}
+};
 
 / {
     // macros
