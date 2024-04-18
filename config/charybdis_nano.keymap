@@ -248,7 +248,7 @@
                 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &cmqus          &dtsmi          &kp CAPS
                                                 &lt MOUSE ESC   &lt FUN TAB     &lt SYM SPACE   &lt SYM RET     &lt FUN BSPC
              	>;
-  trackball-bindings = <&tmv>;
+
         };
 
         number_layer {
