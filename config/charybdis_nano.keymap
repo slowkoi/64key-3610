@@ -10,6 +10,12 @@
 #define SYMBOL  2
 #define HOTKEY  3
 
+&lt {
+    tapping-term-ms = <240>;
+    flavor = "balanced";
+    quick-tap-ms = <150>;
+};
+
 / {
     behaviors {
         td0: tap_dance_0 {
