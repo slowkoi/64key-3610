@@ -1,7 +1,7 @@
 if SHIELD_CHARYBDIS_NANO_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Charybdis_nano"
+	default "64key-ball"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
