@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/Amos698
+      url-base: https://github.com/slowkoi
   projects:
     - name: zmk
       remote: zmkfirmware
