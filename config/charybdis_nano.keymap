@@ -23,7 +23,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp ESC>, <&kp TAB>;
+            bindings = <&mkp MB1>, <&mkp MB2>;
         };
     };
 
@@ -43,20 +43,20 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <31 32>;
+            key-positions = <>;
             bindings = <&mkp LCLK>;
         };
 
         combo_rgui {
             timeout-ms = <50>;
-            key-positions = <31 32 33>;
+            key-positions = <>;
             bindings = <&mkp MCLK>;
         };
 
         combo_LSHFT {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&mkp RCLK>;
+            bindings = <&td0>;
         };
 
         combo_PGUP {
