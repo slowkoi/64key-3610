@@ -17,16 +17,6 @@
 };
 
 / {
-    behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mkp MB1>, <&mkp MB2>;
-        };
-    };
-
     macros {
         macro_phone: macro_phone {
             // 1351
@@ -43,20 +33,20 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <>;
+            key-positions = <31 32>;
             bindings = <&mkp LCLK>;
         };
 
         combo_rgui {
             timeout-ms = <50>;
-            key-positions = <>;
+            key-positions = <31 32 33>;
             bindings = <&mkp MCLK>;
         };
 
         combo_LSHFT {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&td0>;
+            bindings = <&mkp MB2>;
         };
 
         combo_PGUP {
